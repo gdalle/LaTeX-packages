@@ -1,0 +1,47 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mypackages}
+
+\RequirePackage[utf8]{inputenc} % Encoding
+\RequirePackage[T1]{fontenc} % Font
+\RequirePackage[french, english]{babel} % Languages
+
+\RequirePackage{ifthen} % Boolean logic
+
+\RequirePackage{xcolor} % Colors
+
+\PassOptionsToPackage{hyphens}{url} % Web links
+\RequirePackage{bookmark} % Bookmarks in pdf
+
+\RequirePackage{comment} % Block comment
+
+\RequirePackage{multicol} % Multiple columns
+
+\RequirePackage{amsmath, amssymb, amsthm} % Math
+\RequirePackage{mathrsfs} % Cursive letters
+
+\RequirePackage{lipsum} % Nonsense
+\RequirePackage{csquotes} % English quotes
+\RequirePackage{cancel} % Strike
+
+\RequirePackage{natbib} % Bibliography
+\bibliographystyle{abbrvnat}
+
+\RequirePackage{graphicx} % Figures
+\RequirePackage{wrapfig} % Wrapped figures
+\RequirePackage[justification=centering]{caption} % Captions
+\RequirePackage{subcaption} % Captions for subfigures
+\captionsetup[subfigure]{justification=centering}
+
+\RequirePackage{tikz} % Diagrams
+\usetikzlibrary{math, backgrounds, arrows, shapes, positioning} % Tikz libraries
+\RequirePackage[framemethod=tikz]{mdframed} % Frames
+\RequirePackage{pgf}
+\RequirePackage{rotating}
+
+\RequirePackage{listings} % Code samples
+\lstset{
+ basicstyle=\footnotesize\ttfamily,
+ frame=single
+}
+
+\input{mynotations.tex}

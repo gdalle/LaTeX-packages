@@ -1,0 +1,38 @@
+\ProvidesPackage{mypackages_beamer}
+
+\RequirePackage{mypackages}
+
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\usefonttheme[onlymath]{serif} % normal math font
+\setbeamercolor{math text}{fg=blue} % blue equations
+\setbeamercolor{math text displayed}{fg=blue}
+
+\setbeamertemplate{caption}[numbered]
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    linkcolor=black
+} % black links to avoid parenthesis trouble
+
+% \setbeamertemplate{navigation symbols}{}
+% \addtobeamertemplate{navigation symbols}{}{%
+%  \usebeamerfont{footline}%
+%  \usebeamercolor[fg]{footline}%
+%  \hspace{1em}%
+%  \insertframenumber/\inserttotalframenumber
+% }
+
+\AtBeginSection[] % TOC before each section
+{
+ \begin{frame}
+  \frametitle{Table of Contents}
+  \tableofcontents[currentsection]
+ \end{frame}
+}
+
+\let\emph\textbf % emph as bold
+
+\newenvironment{bitemize}{\begin{itemize} \itemsep20pt}{\end{itemize}} % spaced itemize
