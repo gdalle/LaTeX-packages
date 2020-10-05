@@ -1,13 +1,14 @@
 \ProvidesPackage{mypackages_beamer}
 
-\RequirePackage{mypackages}
+\RequirePackage{/home/guillaume/Documents/Nextcloud/Projets/LaTeX-packages/mypackages}
 
 \usetheme{Madrid}
 \usecolortheme{beaver}
 
+\definecolor{mathcolor}{rgb}{0.3, 0., 0.8}
 \usefonttheme[onlymath]{serif} % normal math font
-\setbeamercolor{math text}{fg=blue} % blue equations
-\setbeamercolor{math text displayed}{fg=blue}
+\setbeamercolor{math text}{fg=mathcolor} % equations
+\setbeamercolor{math text displayed}{fg=mathcolor}
 
 \setbeamertemplate{caption}[numbered]
 
@@ -17,7 +18,7 @@
     linkcolor=black
 } % black links to avoid parenthesis trouble
 
-% \setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{navigation symbols}{} % frame numbers
 % \addtobeamertemplate{navigation symbols}{}{%
 %  \usebeamerfont{footline}%
 %  \usebeamercolor[fg]{footline}%
@@ -36,3 +37,11 @@
 \let\emph\textbf % emph as bold
 
 \newenvironment{bitemize}{\begin{itemize} \itemsep20pt}{\end{itemize}} % spaced itemize
+
+\newtheorem{remark}{Remark}
+\newtheorem{proposition}{Proposition}
+
+% \AtBeginEnvironment{theorem}{
+%   \setbeamercolor{block title}{use=example text,fg=white,bg=example text.fg!75!black}
+%   \setbeamercolor{block body}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+% }

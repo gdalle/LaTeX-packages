@@ -14,6 +14,7 @@
 \RequirePackage[
  colorlinks=true,
  breaklinks=true,
+ linkcolor=black,
  urlcolor=blue,
  citecolor=red
 ]{hyperref} % References and links
@@ -25,3 +26,14 @@
 \RequirePackage{enumitem} % List settings
 
 \setlength\parindent{0pt} % Paragraph indentation
+
+\RequirePackage[acronym]{glossaries}
+\makeglossaries
+
+\renewcommand{\bibsection}{}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{remark}{Remark}
