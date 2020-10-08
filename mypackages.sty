@@ -13,6 +13,7 @@
 \RequirePackage{xcolor} % Colors
 
 \RequirePackage{comment} % Block comment
+\RequirePackage{epigraph} % Quotes
 
 \RequirePackage{multicol} % Multiple columns
 
@@ -31,8 +32,6 @@
 
 \RequirePackage{tikz} % Diagrams
 \usetikzlibrary{math, backgrounds, arrows, shapes, positioning, bayesnet} % Tikz libraries
-\tikzstyle{bigenough} = [scale = 0.6, minimum size = 1cm, inner sep = 1pt]
-\RequirePackage{/home/guillaume/Documents/Nextcloud/Projets/LaTeX-packages/mypackages}
 
 \RequirePackage[framemethod=tikz]{mdframed} % Frames
 \RequirePackage{pgf}
@@ -44,8 +43,6 @@
  frame=single
 }
 
-\input{/home/guillaume/Documents/Nextcloud/Projets/LaTeX-packages/mynotations.tex}
-
-\tikzstyle{bnedge} = [->, >={triangle 45}]
+\usepackage{array}
 
 \usepackage[ruled,vlined]{algorithm2e} % Algorithms

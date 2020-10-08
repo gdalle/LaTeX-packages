@@ -1,3 +1,5 @@
+% Mathematical commands
+
 \renewcommand{\epsilon}{\varepsilon}
 \newcommand{\Ee}{\mathbb{E}}
 \newcommand{\Pp}{\mathbb{P}}
@@ -14,6 +16,8 @@
 \newcommand{\Idmat}{\mathrm{I}}
 
 \renewcommand\qedsymbol{$\color{black}{\blacksquare}$}
+
+% Manuscript annotations
 
 \newenvironment{todo}{
  \begin{mdframed}[
@@ -42,3 +46,10 @@
   }{
  \end{mdframed}
 }
+
+% Tikz styles
+
+\tikzstyle{bnedge} = [->, >={triangle 45}]
+\tikzstyle{rightsize} = [scale=0.7]
+\tikzstyle{grapharc} = [->, >=latex, line width = 0.8]
+\tikzstyle{graphnode} = [draw, circle, minimum size = 1cm, inner sep = 1pt, line width = 0.6]

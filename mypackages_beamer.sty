@@ -1,7 +1,5 @@
 \ProvidesPackage{mypackages_beamer}
 
-\RequirePackage{/home/guillaume/Documents/Nextcloud/Projets/LaTeX-packages/mypackages}
-
 \usetheme{Madrid}
 \usecolortheme{beaver}
 
@@ -10,7 +8,9 @@
 \setbeamercolor{math text}{fg=mathcolor} % equations
 \setbeamercolor{math text displayed}{fg=mathcolor}
 
-\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption}[numbered] % numbeder images
+
+\setbeamertemplate{blocks}[rounded][shadow=false] % rounded blocks
 
 \hypersetup{
     colorlinks,
@@ -37,6 +37,8 @@
 \let\emph\textbf % emph as bold
 
 \newenvironment{bitemize}{\begin{itemize} \itemsep20pt}{\end{itemize}} % spaced itemize
+\newenvironment{benumerate}{\begin{enumerate} \itemsep20pt}{\end{enumerate}} % spaced enumerate
+
 
 \newtheorem{remark}{Remark}
 \newtheorem{proposition}{Proposition}
