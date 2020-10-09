@@ -18,7 +18,7 @@
     linkcolor=black
 } % black links to avoid parenthesis trouble
 
-% \setbeamertemplate{navigation symbols}{} % frame numbers
+\setbeamertemplate{navigation symbols}{} % no navigation symbols
 % \addtobeamertemplate{navigation symbols}{}{%
 %  \usebeamerfont{footline}%
 %  \usebeamercolor[fg]{footline}%
@@ -39,11 +39,12 @@
 \newenvironment{bitemize}{\begin{itemize} \itemsep20pt}{\end{itemize}} % spaced itemize
 \newenvironment{benumerate}{\begin{enumerate} \itemsep20pt}{\end{enumerate}} % spaced enumerate
 
-
 \newtheorem{remark}{Remark}
 \newtheorem{proposition}{Proposition}
+\newenvironment{myproof}{\textbf{Proof:}}{\hfill$\qedhere$}
 
 % \AtBeginEnvironment{theorem}{
 %   \setbeamercolor{block title}{use=example text,fg=white,bg=example text.fg!75!black}
 %   \setbeamercolor{block body}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
 % }
+
