@@ -10,7 +10,7 @@
 
 \RequirePackage{ifthen} % Boolean logic
 
-\RequirePackage{xcolor} % Colors
+\RequirePackage[dvipsnames]{xcolor} % Colors
 
 \RequirePackage{comment} % Block comment
 \RequirePackage{epigraph} % Quotes
@@ -31,9 +31,9 @@
 \captionsetup[subfigure]{justification=centering}
 
 \RequirePackage{tikz} % Diagrams
-\usetikzlibrary{math, backgrounds, arrows, shapes, positioning, bayesnet} % Tikz libraries
+\usetikzlibrary{math, backgrounds, arrows, shapes, positioning} % Tikz libraries
 
-\RequirePackage[framemethod=tikz]{mdframed} % Frames
+% \RequirePackage[framemethod=tikz]{mdframed} % Frames
 \RequirePackage{pgf}
 \RequirePackage{rotating}
 
@@ -43,6 +43,7 @@
  frame=single
 }
 
-\usepackage{array}
+\RequirePackage{array}
+\RequirePackage{makecell}
 
-\usepackage[ruled,vlined]{algorithm2e} % Algorithms
+\RequirePackage[ruled,vlined]{algorithm2e} % Algorithms
