@@ -10,7 +10,7 @@
 
 \RequirePackage{ifthen} % Boolean logic
 
-\RequirePackage{xcolor} % Colors
+\RequirePackage[dvipsnames]{xcolor} % Colors
 
 \RequirePackage{comment} % Block comment
 \RequirePackage{epigraph} % Quotes
@@ -19,13 +19,17 @@
 
 \RequirePackage{amsmath, amssymb, amsthm} % Math
 \RequirePackage{mathrsfs} % Cursive letters
+\RequirePackage{array}
 
 \RequirePackage{lipsum} % Nonsense
 \RequirePackage{csquotes} % English quotes
 \RequirePackage{cancel} % Strike
 
+\RequirePackage{makecell}
+
 \RequirePackage{graphicx} % Figures
 \RequirePackage{wrapfig} % Wrapped figures
+\RequirePackage{rotating} % Rotated figures
 \RequirePackage[justification=centering]{caption} % Captions
 \RequirePackage{subcaption} % Captions for subfigures
 \captionsetup[subfigure]{justification=centering}
@@ -43,6 +47,8 @@
  frame=single
 }
 
-\usepackage{array}
+\RequirePackage{array}
 
-\usepackage[ruled,vlined]{algorithm2e} % Algorithms
+\RequirePackage[ruled,vlined]{algorithm2e} % Algorithms
+
+\RequirePackage{pdfpages}

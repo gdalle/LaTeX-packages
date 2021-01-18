@@ -1,13 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{mypackages_latex}
 
-\RequirePackage[
- a4paper,
- left=3cm,
- right=3cm,
- top=3cm,
- bottom=3cm
-]{geometry} % Margins
+\RequirePackage{fullpage}
+% \RequirePackage[left=2cm, right=2cm]{geometry}
 
 \RequirePackage[
  colorlinks=true,
@@ -30,8 +25,11 @@
 
 \renewcommand{\bibsection}{}
 
+\RequirePackage{makecell}
+
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[section]
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{definition}{Definition}[section]
 \newtheorem{remark}{Remark}
+
