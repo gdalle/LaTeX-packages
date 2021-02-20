@@ -29,14 +29,14 @@
 \AtBeginSection[] % TOC before each section
 {
  \begin{frame}
-  \frametitle{Table of Contents}
+  \frametitle{Plan}
   \tableofcontents[currentsection]
  \end{frame}
 }
 
 \let\emph\textbf % emph as bold
 
-\newenvironment{bitemize}{\begin{itemize} \itemsep20pt}{\end{itemize}} % spaced itemize
+\newenvironment{bitemize}{\vfill \begin{itemize} \itemsep20pt}{\end{itemize} \vfill} % spaced itemize
 \newenvironment{benumerate}{\begin{enumerate} \itemsep20pt}{\end{enumerate}} % spaced enumerate
 
 \newtheorem{remark}{Remark}
