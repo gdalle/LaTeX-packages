@@ -1,6 +1,0 @@
-PWD /home/guillaume/Documents/Nextcloud/Projets/LaTeX-packages
-INPUT /home/guillaume/texlive/2019/texmf.cnf
-INPUT /home/guillaume/texlive/2019/texmf-dist/web2c/texmf.cnf
-INPUT /home/guillaume/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT mynotations.tex
-OUTPUT mynotations.log

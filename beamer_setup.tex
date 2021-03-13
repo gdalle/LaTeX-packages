@@ -1,0 +1,37 @@
+% Theme
+\usetheme{Madrid}
+\usecolortheme{beaver}
+
+\let\emph\textbf % emph as bold
+
+% Spaced environments
+\newenvironment{bitemize}{\vfill \begin{itemize} \itemsep20pt}{\end{itemize} \vfill}
+\newenvironment{benumerate}{\begin{enumerate} \itemsep20pt}{\end{enumerate}}
+
+% Math environments
+\newtheorem{remark}{Remark}
+\newtheorem{proposition}{Proposition}
+\newenvironment{myproof}{\textbf{Proof:}}{\hfill$\qedhere$}
+
+% Math display
+\definecolor{mathcolor}{rgb}{0.3, 0., 0.8}
+\usefonttheme[onlymath]{serif} % normal math font
+\setbeamercolor{math text}{fg=mathcolor} % equations
+\setbeamercolor{math text displayed}{fg=mathcolor}
+
+\setbeamertemplate{caption}[numbered] % numbeder images
+
+\setbeamertemplate{blocks}[rounded][shadow=false] % rounded blocks
+
+% Links and navigation
+\hypersetup{
+    % colorlinks,
+    % citecolor=black,
+    % linkcolor=black
+} % black links to avoid parenthesis trouble
+\setbeamertemplate{navigation symbols}{} % no navigation symbols
+
+% TOC reminders
+% \AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}} TOC before each section
+\AtBeginSection[]{} % no TOC before each section...
+

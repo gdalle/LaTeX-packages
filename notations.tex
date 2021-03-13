@@ -15,20 +15,27 @@
 \newcommand{\Ee}{\mathbb{E}}
 \newcommand{\Pp}{\mathbb{P}}
 \newcommand{\Vv}{\mathbb{V}}
-\newcommand{\Cov}{\mathrm{Cov}}
-\newcommand{\KL}[2]{\mathrm{KL}\left(#1 ~\middle\Vert~ #2 \right)}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\KLdiv}{KL}
+\newcommand{\KL}[2]{\KLdiv\left(#1 ~\middle\Vert~ #2 \right)}
 
 % Linear algebra
-\newcommand{\Tr}{\mathrm{Tr}}
-\newcommand{\diag}{\mathrm{diag}}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\bdiag}{bdiag}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Idmat}{I}
+\DeclareMathOperator{\Jmat}{J}
+\DeclareMathOperator{\vecm}{vec}
 \newcommand{\one}{\mathbb{1}}
-\newcommand{\e}{\mathbf{e}}
-\newcommand{\Idmat}{\mathrm{I}}
 
 % Optimization
-\newcommand{\val}{\mathrm{val}}
+\DeclareMathOperator{\val}{val}
 
-% Complexity
+% Complexity\lstset{
+ basicstyle=\footnotesize\ttfamily,
+ frame=single
+}
 \renewcommand{\P}{{\bf P}}
 \newcommand{\NP}{{\bf NP}}
 \newcommand{\prob}{\mathcal{P}}
@@ -44,41 +51,15 @@
 % Proofs
 \renewcommand\qedsymbol{$\color{black}{\blacksquare}$}
 
-% Manuscript annotations
-
-\newenvironment{todo}{
-  \begin{mdframed}[
-      roundcorner=10,
-      nobreak=true,
-      frametitle={TO DO},
-      frametitlerule=true,
-      frametitlebackgroundcolor=red!20,
-      backgroundcolor=red!10,
-      font={\itshape},
-    ]
-    }{
-  \end{mdframed}
-}
-
-\newenvironment{rem}{
-  \begin{mdframed}[
-      roundcorner=10,
-      nobreak=true,
-      frametitle={REMARK},
-      frametitlerule=true,
-      frametitlebackgroundcolor=blue!20,
-      backgroundcolor=blue!10,
-      font={\itshape},
-    ]
-    }{
-  \end{mdframed}
-}
+% Alignment
+\newcommand{\phantomeq}{\phantom{{}={}}}
+\newcommand{\phantomleq}{\phantom{{}\leq{}}}
+\newcommand{\phantomgeq}{\phantom{{}\geq{}}}
+\newcommand{\phantomplus}{\phantom{{}+{}}}
+\newcommand{\phantomminus}{\phantom{{}-{}}}
 
 % Tikz styles
-
 \tikzstyle{bnedge} = [->, >={triangle 45}]
 \tikzstyle{rightsize} = [scale=0.7]
 \tikzstyle{grapharc} = [->, >=latex, line width = 0.8]
 \tikzstyle{graphnode} = [draw, circle, minimum size = 1cm, inner sep = 1pt, line width = 0.6]
-
-\newcommand{\setseparator}{~|~}
