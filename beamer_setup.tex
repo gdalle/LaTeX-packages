@@ -2,7 +2,7 @@
 \usetheme[compress]{Szeged}
 \usecolortheme{rose}
 
-\let\emph\textbf % emph as bold
+% \let\emph\textbf % emph as bold
 
 % Spaced environments
 \newenvironment{bitemize}{\vfill \begin{itemize} \itemsep20pt}{\end{itemize} \vfill}
@@ -32,7 +32,7 @@
 \setbeamertemplate{navigation symbols}{} % no navigation symbols
 
 % TOC reminders
-% \AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}} TOC before each section
-\AtBeginSection[]{} % no TOC before each section...
+\AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}}
+% \AtBeginSection[]{} % no TOC before each section...
 \AtBeginSubsection[]{} % no TOC before each section...
 
