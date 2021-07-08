@@ -1,49 +1,51 @@
+% General
 \usepackage[utf8]{inputenc} % Encoding
 \usepackage[T1]{fontenc} % Font
-
 \usepackage[french, english]{babel} % Languages
 
+% Bibliography
 \usepackage[style=numeric]{biblatex}
 
-\usepackage{ifthen} % Boolean logic
-
-\usepackage{xcolor} % Colors
-
-\usepackage{animate}
-
-\usepackage{comment} % Block comment
-\usepackage{epigraph} % Quotes
-
-\usepackage{multicol} % Multiple columns
-\usepackage{array} % Arrays
-\usepackage{makecell} % Merge table cells
-\usepackage{multirow}
-\usepackage{booktabs}
-
-\usepackage{amsmath, amssymb, amsthm} % Math
-\usepackage{mathrsfs} % Cursive letters
-\usepackage{bm}
-
-\usepackage{lipsum} % Nonsense
-\usepackage{csquotes} % English quotes
-\usepackage{cancel} % Strike
-
+% Graphics
 \usepackage{graphicx} % Figures
 \usepackage{wrapfig} % Wrapped figures
 \usepackage{rotating} % Rotated figures
 \usepackage{pdfpages} % Pdf insertion
-
-\usepackage[justification=centering]{caption} % Captions
-\usepackage[justification=centering]{subcaption} % Captions for subfigures
-
+\usepackage{animate} % Animations from gifs
+\usepackage{pgf}
+\usepackage{rotating}
+\usepackage{xcolor} % Colors
 \usepackage{tikz} % Diagrams
 \usetikzlibrary{math, backgrounds, arrows, shapes, positioning} % Tikz libraries
 
-\usepackage{pgf}
-\usepackage{rotating}
+% Captions
+\usepackage[justification=centering]{caption} % Captions for figures
+\usepackage[justification=centering]{subcaption} % Captions for subfigures
 
+% Text
+\usepackage{comment} % Block comment
+\usepackage{epigraph} % Quotes
+
+% Alignment
+\usepackage{array} % Arrays
+\usepackage{multicol} % Multiple columns
+\usepackage{multirow} % Multiple rows
+\usepackage{makecell} % Merge table cells
+\usepackage{booktabs}
+
+% Mathematics
+\usepackage{amsmath, amssymb, amsthm} % Symbols
+\usepackage{mathrsfs} % Cursive letters
+\usepackage{bm} % Bold math
+\usepackage{cancel} % Strike
+
+% Text
+\usepackage{lipsum} % Nonsense
+\usepackage{csquotes} % English quotation marks
+
+% Source code
 \usepackage{listings} % Code samples
 \usepackage[ruled,vlined]{algorithm2e} % Algorithms
 
-\usepackage[framemethod=tikz]{mdframed} % Frames
-
+% Misc.
+\usepackage{ifthen} % Boolean logic

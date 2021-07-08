@@ -1,8 +1,16 @@
+% Document-specific packages
 
-\hypersetup{colorlinks=true, breaklinks=true, linkcolor=black, urlcolor=blue, citecolor=red} % Link formatting
+\usepackage{fullpage} % Small margins
+\usepackage{enumitem} % List settings
+\usepackage{bookmark} % Bookmarks in pdf
+\usepackage[toc,page]{appendix} % Appendix
+\usepackage[framemethod=tikz]{mdframed} % Frames
 
+% Formatting
+\hypersetup{colorlinks=true, breaklinks=true, linkcolor=black, urlcolor=blue, citecolor=red} % Hyperlinks
 \setlength\parindent{0pt} % Paragraph indentation
 
+% Bibliography
 \renewcommand{\bibsection}{} % Custom bibliography title
 \bibliographystyle{abbrvnat}
 
@@ -13,11 +21,8 @@
 \newtheorem{definition}{Definition}[section]
 \newtheorem{remark}{Remark}[section]
 
-% Algorithms
-\lstset{basicstyle=\footnotesize\ttfamily, frame=single}
 
 % Manuscript annotations
-
 \newenvironment{todo}{
   \begin{mdframed}[
       roundcorner=10,
@@ -26,20 +31,6 @@
       frametitlerule=true,
       frametitlebackgroundcolor=red!20,
       backgroundcolor=red!10,
-      font={\itshape},
-    ]
-    }{
-  \end{mdframed}
-}
-
-\newenvironment{rem}{
-  \begin{mdframed}[
-      roundcorner=10,
-      nobreak=true,
-      frametitle={REMARK},
-      frametitlerule=true,
-      frametitlebackgroundcolor=blue!20,
-      backgroundcolor=blue!10,
       font={\itshape},
     ]
     }{

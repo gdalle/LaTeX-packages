@@ -2,40 +2,23 @@
 \usetheme[compress]{Szeged}
 \usecolortheme{rose}
 
-% \let\emph\textbf % emph as bold
-
-% Spaced environments
-\newenvironment{bitemize}{\vfill \begin{itemize} \itemsep20pt}{\end{itemize} \vfill}
-\newenvironment{benumerate}{\begin{enumerate} \itemsep20pt}{\end{enumerate}}
-
 % Math environments
 \newtheorem{remark}{Remark}
-\newtheorem{proposition}{Proposition}
-\newenvironment{myproof}{\textbf{Proof:}}{\hfill$\qedhere$}
 
 % Math display
-\definecolor{mathcolor}{rgb}{0.3, 0., 0.8}
 \usefonttheme[onlymath]{serif} % normal math font
-\setbeamercolor{math text}{fg=mathcolor} % equations
-\setbeamercolor{math text displayed}{fg=mathcolor}
+\definecolor{mathcolor}{rgb}{0.3, 0., 0.8} % math color is blue
+\setbeamercolor{math text}{fg=mathcolor} % inline math
+\setbeamercolor{math text displayed}{fg=mathcolor} % display math
 
-\setbeamertemplate{caption}[numbered] % numbeder images
-
-\setbeamertemplate{blocks}[rounded][shadow=false] % rounded blocks
-
-\setbeamertemplate{itemize items}[circle]
-\setbeamertemplate{enumerate items}[default]
-
-% Links and navigation
-\hypersetup{
-    % colorlinks,
-    % citecolor=black,
-    % linkcolor=black
-} % black links to avoid parenthesis trouble
+% Template customization
+\setbeamertemplate{caption}[numbered] % Numbered images
+\setbeamertemplate{blocks}[rounded][shadow=false] % Rounded blocks
+\setbeamertemplate{itemize items}[circle] % Bullet itemize
+\setbeamertemplate{enumerate items}[default] % Default numbering
 \setbeamertemplate{navigation symbols}{} % no navigation symbols
 
 % TOC reminders
-\AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}}
-% \AtBeginSection[]{} % no TOC before each section...
-\AtBeginSubsection[]{} % no TOC before each section...
+\AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}} % TOC before each section
+\AtBeginSubsection[]{} % no TOC before each subsection
 

@@ -1,50 +1,38 @@
-%% Mathematical commands
-
 % Sets
-\newcommand{\Rr}{\mathbb{R}}
-\newcommand{\Qq}{\mathbb{Q}}
-\newcommand{\Zz}{\mathbb{Z}}
-\newcommand{\Nn}{\mathbb{N}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbN}{\mathbb{N}}
 
 % Analysis
 \renewcommand{\epsilon}{\varepsilon}
 \newcommand{\bigO}{\mathcal{O}}
-\newcommand{\setsep}{~|~}
-\DeclareMathOperator*{\argmin}{argmin}
-\DeclareMathOperator*{\argmax}{argmax}
-
 
 % Proba
-\newcommand{\Ee}{\mathbb{E}}
-\newcommand{\Pp}{\mathbb{P}}
-\newcommand{\Vv}{\mathbb{V}}
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbV}{\mathbb{V}}
+\newcommand{\KL}[2]{\KLdiv\left(#1 ~\middle\Vert~ #2 \right)}
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\Cov}{Cov}
 \DeclareMathOperator{\KLdiv}{KL}
-\newcommand{\KL}[2]{\KLdiv\left(#1 ~\middle\Vert~ #2 \right)}
 
 % Linear algebra
 \DeclareMathOperator{\diag}{diag}
-\DeclareMathOperator{\bdiag}{bdiag}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Idmat}{I}
-\DeclareMathOperator{\Jmat}{J}
-\DeclareMathOperator{\vecm}{vec}
 \newcommand{\one}{\mathbb{1}}
 
 % Optimization
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
 \DeclareMathOperator{\val}{val}
-
-% Complexity
-\renewcommand{\P}{{\bf P}}
-\newcommand{\NP}{{\bf NP}}
-\newcommand{\prob}{\mathcal{P}}
-\newcommand{\alg}{\mathcal{A}}
 
 % Graphs
 \newcommand{\calG}{\mathcal{G}}
 \newcommand{\calD}{\mathcal{D}}
 \newcommand{\calV}{\mathcal{V}}
+\newcommand{\calN}{\mathcal{N}}
 \newcommand{\calE}{\mathcal{E}}
 \newcommand{\calA}{\mathcal{A}}
 
@@ -61,8 +49,5 @@
 \tikzstyle{grapharc} = [->, >=latex, line width = 0.8]
 \tikzstyle{graphnode} = [draw, circle, minimum size = 1cm, inner sep = 1pt, line width = 0.6]
 
-% Algos
-\lstset{
-  basicstyle=\footnotesize\ttfamily,
- frame=single
-}
+% Algorithms
+\lstset{basicstyle=\footnotesize\ttfamily,frame=single}
