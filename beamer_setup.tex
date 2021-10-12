@@ -14,11 +14,16 @@
 % Template customization
 \setbeamertemplate{caption}[numbered] % Numbered images
 \setbeamertemplate{blocks}[rounded][shadow=false] % Rounded blocks
-\setbeamertemplate{itemize items}[circle] % Bullet itemize
+
+\setbeamertemplate{itemize item}[square] % Square itemize
+\setbeamertemplate{itemize subitem}[triangle] % Bullet subitemize
+\setbeamertemplate{itemize subsubitem}[circle] % Triangle subsubitemize
+
 \setbeamertemplate{enumerate items}[default] % Default numbering
+
 \setbeamertemplate{navigation symbols}{} % no navigation symbols
 
 % TOC reminders
-\AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}} % TOC before each section
-\AtBeginSubsection[]{} % no TOC before each subsection
+% \AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}} % TOC before each section
+% \AtBeginSubsection[]{} % no TOC before each subsection
 
