@@ -5,11 +5,11 @@
 % Math environments
 \newtheorem{remark}{Remark}
 
+
 % Math display
 \usefonttheme[onlymath]{serif} % normal math font
-\definecolor{mathcolor}{rgb}{0.3, 0., 0.8} % math color is blue
-\setbeamercolor{math text}{fg=mathcolor} % inline math
-\setbeamercolor{math text displayed}{fg=mathcolor} % display math
+\setbeamercolor{math text}{fg=BlueViolet} % inline math
+\setbeamercolor{math text displayed}{fg=BlueViolet} % display math
 
 % Template customization
 \setbeamertemplate{caption}[numbered] % Numbered images
@@ -23,7 +23,5 @@
 
 \setbeamertemplate{navigation symbols}{} % no navigation symbols
 
-% TOC reminders
-% \AtBeginSection[]{\begin{frame} \frametitle{Plan} \tableofcontents[currentsection] \end{frame}} % TOC before each section
+\AtBeginSection[]{\begin{frame} \frametitle{Overview} \tableofcontents[currentsection] \end{frame}} % TOC before each section
 % \AtBeginSubsection[]{} % no TOC before each subsection
-
