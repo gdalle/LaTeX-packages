@@ -1,18 +1,32 @@
-% Sets
-\newcommand{\bbR}{\mathbb{R}}
-\newcommand{\bbQ}{\mathbb{Q}}
-\newcommand{\bbZ}{\mathbb{Z}}
-\newcommand{\bbN}{\mathbb{N}}
+%% Letters
 
-% Analysis
+% Mathbb
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbV}{\mathbb{V}}
+\newcommand{\bbZ}{\mathbb{Z}}
+
+% Mathcal
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+
+%% Symbols
+
 \renewcommand{\epsilon}{\varepsilon}
 \newcommand{\bigO}{\mathcal{O}}
+\newcommand{\one}{\mathbb{1}}
+
+%% Operators
 
 % Proba
-\newcommand{\bbE}{\mathbb{E}}
-\newcommand{\bbP}{\mathbb{P}}
-\newcommand{\bbV}{\mathbb{V}}
-\newcommand{\KL}[2]{\KLdiv\left(#1 ~\middle\Vert~ #2 \right)}
 \DeclareMathOperator{\Var}{Var}
 \DeclareMathOperator{\Cov}{Cov}
 \DeclareMathOperator{\KLdiv}{KL}
@@ -21,20 +35,11 @@
 \DeclareMathOperator{\diag}{diag}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\Idmat}{I}
-\newcommand{\one}{\mathbb{1}}
 
 % Optimization
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
 \DeclareMathOperator{\val}{val}
-
-% Graphs
-\newcommand{\calG}{\mathcal{G}}
-\newcommand{\calD}{\mathcal{D}}
-\newcommand{\calV}{\mathcal{V}}
-\newcommand{\calN}{\mathcal{N}}
-\newcommand{\calE}{\mathcal{E}}
-\newcommand{\calA}{\mathcal{A}}
 
 % Alignment
 \newcommand{\phantomeq}{\phantom{{}={}}}
@@ -43,7 +48,9 @@
 \newcommand{\phantomplus}{\phantom{{}+{}}}
 \newcommand{\phantomminus}{\phantom{{}-{}}}
 
-% Tikz styles
+%% Styles
+
+% Tikz
 \tikzstyle{bnedge} = [->, >={triangle 45}]
 \tikzstyle{rightsize} = [scale=0.7]
 \tikzstyle{grapharc} = [->, >=latex, line width = 0.8]
