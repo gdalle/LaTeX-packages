@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{mysetup}
+\usepackage{myarticle}
+
+\usepackage[
+	backref=false,
+	backend=biber,
+	giveninits=true,
+	style=authoryear,
+	date=year,
+	uniquename=init,
+	maxbibnames=99,
+	url=false
+]{biblatex} % Bibliography
+
+\addbibresource{references.bib}
+
+\title{My dummy LaTeX article}
+\author{Guillaume Dalle}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Hello, my favorite article is the one by \textcite{dalleLearningCombinatorialOptimization2022}. 
+
+\printbibliography
+
+\end{document}

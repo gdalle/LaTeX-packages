@@ -1,0 +1,46 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mybeamer}[2023/02/02 Beamer setup of Guillaume Dalle]
+
+\RequirePackage{appendixnumberbeamer}
+
+\hypersetup{colorlinks=true, breaklinks=true, linkcolor=black} % Hyperlinks
+
+% Theme
+\usetheme[compress]{Szeged}
+\usecolortheme{rose}
+
+\newcommand{\usethemecolors}{
+  \begin{frame}<0-| handout:0>[noframenumbering]{Colors}
+    {\usebeamercolor[fg]{title} title.fg}
+    {\usebeamercolor[fg]{block title} block title.fg}
+    {\usebeamercolor[fg]{block title alerted} block title alerted.fg}
+    {\usebeamercolor[fg]{block title example} block title example.fg}
+  \end{frame}
+}
+
+\newcommand{\themeblue}{block title.fg}
+\newcommand{\themered}{block title alerted.fg}
+\newcommand{\themegreen}{block title example.fg}
+\newcommand{\themeorange}{orange}
+\newcommand{\themecyan}{cyan}
+\newcommand{\themeviolet}{violet}
+
+% Template customization
+\setbeamertemplate{caption}[numbered] % Numbered images
+\setbeamertemplate{blocks}[rounded][shadow=false] % Rounded blocks
+
+\setbeamertemplate{itemize item}[square] % Square itemize
+\setbeamertemplate{itemize subitem}[triangle] % Bullet subitemize
+\setbeamertemplate{itemize subsubitem}[circle] % Triangle subsubitemize
+
+\setbeamertemplate{enumerate items}[default] % Default numbering
+
+\setbeamertemplate{navigation symbols}{} % no navigation symbols
+\setbeamertemplate{footline}[frame number]
+
+% Running TOC
+\AtBeginSection[]{
+  \begin{frame}{Overview}
+    \tableofcontents[currentsection, hideothersubsections]
+  \end{frame}
+} % TOC before each section

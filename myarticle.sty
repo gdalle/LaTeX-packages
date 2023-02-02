@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{myarticle}[2023/02/02 Article setup of Guillaume Dalle]
+
+\RequirePackage{fullpage}
+
+\RequirePackage{bookmark} % Bookmarks in pdf
+\RequirePackage[toc,page,header]{appendix} % Appendix
+
+\RequirePackage{enumitem} % List settings
+\renewcommand{\labelitemii}{$\circ$}
+
+% Misc.
+\RequirePackage[textsize=small,colorinlistoftodos]{todonotes}
+\RequirePackage[stamp=false]{draftwatermark}
+
+% Links
+\hypersetup{colorlinks=true, breaklinks=true}

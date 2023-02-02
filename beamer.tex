@@ -1,0 +1,62 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{mysetup}
+\usepackage{mybeamer}
+
+\usepackage[
+	backref=false,
+	backend=biber,
+	giveninits=true,
+	style=authoryear,
+	date=year,
+	uniquename=init,
+	maxbibnames=99,
+	url=false
+]{biblatex} % Bibliography
+
+\addbibresource{references.bib}
+
+\newcommand{\beamercite}[1]{\footnote[frame]{\tiny \fullcite{#1}}}
+
+\title{My dummy Beamer presentation}
+\author{Guillaume Dalle}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+	\maketitle
+\end{frame}
+
+\usethemecolors
+
+\begin{frame}{Overview}
+	\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{First section}
+
+\subsection{First subsection}
+
+\begin{frame}{Stuff}
+  Hello, my favorite article is this one\beamercite{dalleLearningCombinatorialOptimization2022}.
+\end{frame}
+
+\subsection{Second subsection}
+
+\section{Second section}
+
+\subsection{First subsection}
+
+\subsection{Second subsection}
+
+\appendix
+
+\section{References}
+
+\begin{frame}[allowframebreaks]{References}
+	\AtNextBibliography{\tiny}
+	\printbibliography[heading=none]
+\end{frame}
+
+\end{document}

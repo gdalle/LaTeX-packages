@@ -1,0 +1,69 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mysetup}[2023/02/02 LaTeX setup of Guillaume Dalle]
+
+% General
+\RequirePackage[T1]{fontenc} % Font
+\RequirePackage[utf8]{inputenc} % Encoding
+\RequirePackage[english]{babel} % Languages
+
+% Appearance
+\RequirePackage{setspace}
+\RequirePackage{adjustbox}
+
+% Graphics
+\RequirePackage{xcolor} % Colors
+\RequirePackage{graphicx} % Figures
+\RequirePackage{tikz} % Diagrams
+\RequirePackage{wrapfig} % Wrapped figures
+\RequirePackage{rotating} % Rotated figures
+\RequirePackage{pdfpages} % Pdf insertion
+\RequirePackage{fancybox} % Boxes
+\RequirePackage{microtype} % Bad boxes
+
+% Captions
+\RequirePackage[justification=centering]{caption} % Captions for figures
+\RequirePackage[justification=centering]{subcaption} % Captions for subfigures
+
+% Text
+\RequirePackage{comment} % Block comment
+\RequirePackage{epigraph} % Quotes
+\RequirePackage{csquotes} % English quotation marks
+\RequirePackage{lipsum}  % Nonsense
+\RequirePackage{xspace}
+\RequirePackage[htt]{hyphenat}  % Hyphenation
+
+% Alignment
+\RequirePackage{array} % Arrays
+\RequirePackage{multicol} % Multiple columns
+\RequirePackage{multirow} % Multiple rows
+\RequirePackage{makecell} % Merge table cells
+\RequirePackage{booktabs} % Nice tables
+
+% Mathematics
+\RequirePackage{amsmath} % Math
+\RequirePackage{amssymb} % Symbols
+\RequirePackage{amsthm} % Theorems
+\RequirePackage{mathtools}
+\RequirePackage{mathrsfs} % Cursive letters
+\RequirePackage{bm} % Bold math
+\RequirePackage{bbm}
+\RequirePackage{stmaryrd}
+\RequirePackage{cancel} % Strike
+
+% Code
+\RequirePackage{listings}
+\RequirePackage[ruled]{algorithm2e} % Pseudocode
+
+% References
+\RequirePackage{xurl} % Break URLs whenever
+% \RequirePackage[backref=true,backend=biber,giveninits=true,style=authoryear,uniquename=init,maxbibnames=99]{biblatex} % Bibliography
+
+% Colors
+\definecolor{juliablue}{rgb}{0.251,0.388,0.847}
+\definecolor{juliagreen}{rgb}{0.220,0.596,0.149}
+\definecolor{juliapurple}{rgb}{0.584,0.345,0.698}
+\definecolor{juliared}{rgb}{0.796,0.235,0.200}
+
+% External
+% \RequirePackage[linenumbers=false, charsperline=92]{jlcode} % Julia
+% \RequirePackage{annotate-equations}
