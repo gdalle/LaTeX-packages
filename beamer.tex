@@ -19,9 +19,9 @@
 
 \newcommand{\beamercite}[1]{
 	\begingroup
-  	\renewcommand\thefootnote{}\footnote{#1}%
-  	\addtocounter{footnote}{-1}%
+  	\renewcommand{\thefootnote}{}
 		\footnote[frame]{\tiny \fullcite{#1}}
+  	\addtocounter{footnote}{-1}%
 	\endgroup
 }
 
