@@ -17,7 +17,13 @@
 
 \addbibresource{references.bib}
 
-\newcommand{\beamercite}[1]{\footnote[frame]{\tiny \fullcite{#1}}}
+\newcommand{\beamercite}[1]{
+	\begingroup
+  	\renewcommand\thefootnote{}\footnote{#1}%
+  	\addtocounter{footnote}{-1}%
+		\footnote[frame]{\tiny \fullcite{#1}}
+	\endgroup
+}
 
 \title{My dummy Beamer presentation}
 \author{Guillaume Dalle}
@@ -40,7 +46,7 @@
 \subsection{First subsection}
 
 \begin{frame}{Stuff}
-  Hello, my favorite article is this one\beamercite{dalleLearningCombinatorialOptimization2022}.
+  Hello, my favorite article is this one.\beamercite{dalleLearningCombinatorialOptimization2022}
 \end{frame}
 
 \subsection{Second subsection}
@@ -56,8 +62,6 @@
 \end{frame}
 
 \appendix
-
-\section{References}
 
 \begin{frame}[allowframebreaks]{References}
 	\AtNextBibliography{\tiny}
